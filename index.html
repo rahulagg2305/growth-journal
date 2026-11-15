@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self' https://api.github.com; manifest-src 'self'; worker-src 'self'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Growth Journal</title>
+  <meta name="description" content="Personal daily growth journal">
+  <meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1F1D2B" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Growth">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="row"><span style="font-size:1.4rem">🌱</span><strong>Growth Journal</strong></div>
+      <button id="sync-pill" class="sync-pill" type="button">…</button>
+    </header>
+    <main id="main" class="stack"></main>
+  </div>
+  <nav class="tabs">
+    <a href="#today" data-tab="today"><span class="ic">✍️</span>Today</a>
+    <a href="#targets" data-tab="targets"><span class="ic">🎯</span>Targets</a>
+    <a href="#insights" data-tab="insights"><span class="ic">📊</span>Insights</a>
+    <a href="#settings" data-tab="settings"><span class="ic">⚙️</span>Settings</a>
+  </nav>
+  <script src="vendor/chart.umd.min.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
